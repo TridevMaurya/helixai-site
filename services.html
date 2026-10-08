@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Services — HelixAI</title>
+<meta name="description" content="HelixAI services: AI drug discovery, genomics, clinical trial intelligence, bioinformatics platforms and regulatory strategy."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%2300f0ff' stroke-width='8'/><circle cx='50' cy='50' r='22' fill='none' stroke='%23ff2fb3' stroke-width='8'/></svg>"/>
+<link rel="stylesheet" href="css/style.css"/>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="index.html"><span class="logo-helix"></span><span><b>Helix</b>AI</span></a>
+    <div class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-glow" style="padding:10px 24px">Talk to us</a>
+    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </nav>
+</header>
+
+<div class="page-hero" style="min-height:72svh;display:flex;align-items:center">
+  <canvas id="mol-canvas" class="webgl"></canvas>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="kicker">Services</div>
+    <h1>Full-stack <span class="grad">bio-intelligence</span></h1>
+    <p>From target to market — six practices, one platform, zero hand-waving. Every engagement is led by scientists who ship.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="grid">
+      <div class="g-card reveal"><div class="icon3d">🧬</div><h3>AI Drug Discovery</h3><p>Target ID, hit finding and lead optimisation with generative chemistry. Typical outcome: 60% fewer synthesis cycles to a development candidate.</p><ul class="checks"><li>De-novo molecule generation</li><li>ADMET & toxicity prediction</li><li>Repurposing screens</li></ul></div>
+      <div class="g-card reveal"><div class="icon3d">🔬</div><h3>Genomics & Precision Medicine</h3><p>Clinical-grade variant interpretation across WGS, WES and single-cell data — with reports clinicians actually read.</p><ul class="checks"><li>Multi-omics integration</li><li>Polygenic risk modelling</li><li>Companion diagnostics</li></ul></div>
+      <div class="g-card reveal"><div class="icon3d">💊</div><h3>Clinical Trial Intelligence</h3><p>Protocol design, synthetic control arms and patient-trial matching that cut enrolment time dramatically.</p><ul class="checks"><li>Site & cohort selection</li><li>Digital twins for controls</li><li>Dropout prediction</li></ul></div>
+      <div class="g-card reveal"><div class="icon3d">🗄️</div><h3>Bioinformatics Platforms</h3><p>We build the data backbone: lakes, knowledge graphs and MLOps that survive audits and scale with you.</p><ul class="checks"><li>FAIR data architecture</li><li>21 CFR Part 11 validation</li><li>On-prem & VPC deployment</li></ul></div>
+      <div class="g-card reveal"><div class="icon3d">📋</div><h3>Regulatory Strategy</h3><p>Approval-pathway modelling and AI-assisted dossiers for FDA, EMA and CDSCO submissions.</p><ul class="checks"><li>Gap analysis & roadmaps</li><li>eCTD authoring support</li><li>Real-world evidence plans</li></ul></div>
+      <div class="g-card reveal"><div class="icon3d">📈</div><h3>Market & HEOR Analytics</h3><p>Launch sequencing, pricing corridors and payer evidence — engineered, not estimated.</p><ul class="checks"><li>Forecasting models</li><li>Payer value dossiers</li><li>Competitive intelligence</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent,rgba(0,240,255,.05),transparent)">
+  <div class="wrap">
+    <div class="kicker reveal">Engagement models</div>
+    <h2 class="reveal">Work with us <span class="grad">your way</span></h2>
+    <div class="grid" style="margin-top:40px">
+      <div class="g-card reveal"><h3>Sprint · 4–6 weeks</h3><p class="sub" style="margin:10px 0 0">A focused AI feasibility study on your data. Go/no-go with numbers, not slides.</p></div>
+      <div class="g-card reveal"><h3>Program · 3–9 months</h3><p class="sub" style="margin:10px 0 0">Embedded team driving a discovery campaign, trial or platform build end-to-end.</p></div>
+      <div class="g-card reveal"><h3>Platform · ongoing</h3><p class="sub" style="margin:10px 0 0">HelixCore licensed inside your walls, with our scientists on call.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:48px" class="reveal">
+      <a href="contact.html" class="btn btn-glow">Request a proposal</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:14px"><span class="logo-helix"></span><span><b>Helix</b>AI</span></a>
+        <p style="color:var(--muted);font-size:.9rem;max-width:280px">Life-sciences consulting powered by frontier AI. Boston · London · Bengaluru.</p>
+      </div>
+      <div><h4>Services</h4><a href="services.html">AI Drug Discovery</a><a href="services.html">Genomics</a><a href="services.html">Clinical Trials</a><a href="services.html">Bioinformatics</a></div>
+      <div><h4>Company</h4><a href="about.html">About</a><a href="about.html">Team</a><a href="contact.html">Contact</a></div>
+      <div><h4>Connect</h4><a href="contact.html">hello@helixai.bio</a><a href="contact.html">LinkedIn</a><a href="contact.html">X / Twitter</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 HelixAI Consulting. All rights reserved.</span><span>Built for the age of intelligent biology.</span></div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script type="module" src="js/molecule.js"></script>
+</body>
+</html>
