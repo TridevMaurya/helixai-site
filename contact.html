@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — HelixAI</title>
+<meta name="description" content="Talk to HelixAI about AI-driven drug discovery, genomics and clinical development."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%2300f0ff' stroke-width='8'/><circle cx='50' cy='50' r='22' fill='none' stroke='%23ff2fb3' stroke-width='8'/></svg>"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="index.html"><span class="logo-helix"></span><span><b>Helix</b>AI</span></a>
+    <div class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-glow" style="padding:10px 24px">Talk to us</a>
+    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </nav>
+</header>
+
+<div class="page-hero" style="position:relative">
+  <canvas id="stars-canvas" class="webgl"></canvas>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="kicker">Contact</div>
+    <h1>Let's decode <span class="grad">your pipeline.</span></h1>
+    <p>Tell us where you are and where the science needs to go. A senior scientist — never a sales rep — replies within one business day.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap contact-grid">
+    <form class="g-card reveal" id="contactForm">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <input type="text" placeholder="Your name" required/>
+        <input type="email" placeholder="Work email" required/>
+      </div>
+      <input type="text" placeholder="Organisation"/>
+      <select required>
+        <option value="" disabled selected>What are you exploring?</option>
+        <option>AI drug discovery</option>
+        <option>Genomics & precision medicine</option>
+        <option>Clinical trial intelligence</option>
+        <option>Bioinformatics platform</option>
+        <option>Regulatory / market strategy</option>
+        <option>Something else</option>
+      </select>
+      <textarea placeholder="Describe your challenge, data and timelines..." required></textarea>
+      <button class="btn btn-glow" type="submit">Send enquiry</button>
+      <p id="formMsg" style="display:none;color:var(--lime);font-weight:600">Message received — we'll reply within one business day.</p>
+    </form>
+    <div class="reveal">
+      <div class="info-card" style="margin-bottom:22px">
+        <div class="kicker">Direct</div>
+        <div class="info-row">📧 <b>Email:</b> hello@helixai.bio</div>
+        <div class="info-row">📞 <b>Phone:</b> +1 (617) 555-0134</div>
+        <div class="info-row">📍 <b>Labs:</b> Boston · London · Bengaluru</div>
+      </div>
+      <div class="info-card">
+        <div class="kicker">What happens next</div>
+        <div class="info-row"><b>Day 1 —</b> A scientist reviews your enquiry.</div>
+        <div class="info-row"><b>Day 3 —</b> Discovery call + NDA if needed.</div>
+        <div class="info-row"><b>Week 2 —</b> Scoping workshop and proposal.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker reveal">FAQ</div>
+    <h2 class="reveal">Questions, <span class="grad">answered</span></h2>
+    <div class="faq" style="margin-top:36px">
+      <div class="faq-item reveal"><div class="faq-q">Do you work with early-stage biotechs? <span>+</span></div><div class="faq-a">Yes — roughly a third of our engagements are with seed to Series B companies. Sprints are designed exactly for teams that need senior firepower without a full hire.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">How do you handle our proprietary data? <span>+</span></div><div class="faq-a">Your data stays in your infrastructure. We deploy HelixCore on-prem or in your VPC, and use federated techniques where data can't move at all.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">Are your models validated for regulated use? <span>+</span></div><div class="faq-a">Our pipelines are built 21 CFR Part 11-ready with full versioning, audit trails and documented validation protocols.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">What does a typical engagement cost? <span>+</span></div><div class="faq-a">Sprints start in the low five figures; programs are scoped to milestones. We'll give you a fixed proposal after the discovery call — no hourly black boxes.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:14px"><span class="logo-helix"></span><span><b>Helix</b>AI</span></a>
+        <p style="color:var(--muted);font-size:.9rem;max-width:280px">Life-sciences consulting powered by frontier AI. Boston · London · Bengaluru.</p>
+      </div>
+      <div><h4>Services</h4><a href="services.html">AI Drug Discovery</a><a href="services.html">Genomics</a><a href="services.html">Clinical Trials</a><a href="services.html">Bioinformatics</a></div>
+      <div><h4>Company</h4><a href="about.html">About</a><a href="about.html">Team</a><a href="contact.html">Contact</a></div>
+      <div><h4>Connect</h4><a href="contact.html">hello@helixai.bio</a><a href="contact.html">LinkedIn</a><a href="contact.html">X / Twitter</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 HelixAI Consulting. All rights reserved.</span><span>Built for the age of intelligent biology.</span></div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/stars.js"></script>
+</body>
+</html>
